@@ -4,98 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сабыржан Резюме</title>
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td>
-          <img src="./avatar.jpg" alt="My Avatar" width="200" />
-        </td>
-        <td>
+    <div class="container">
+      <div class="info">
+        <img src="./avatar.jpg" alt="My Avatar" class="avatar" />
+
+        <div class="info-text">
           <h1>Жасланулы Сабыржан</h1>
-          <p>
-            <em>Я студент <strong>ЕКИТИ</strong></em>
-          </p>
-          <p>Я люблю играть в шахматы, смотреть аниме и программировать</p>
-        </td>
-      </tr>
-    </table>
+          <p>Я студент <strong>ЕКИТИ</strong></p>
+          <p>Я люблю играть в шахматы  смотреть аниме</p>
+  
+          <h4>Мои социальные сети</h4>
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+          |
+          <a href="https://telegram.org/" target="_blank">Telegram</a>
+          |
+          <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        </div>
+      </div>
 
-    <hr />
+      <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Чтение</li>
+          <li>Рыбалка</li>
+          <li>Кулинария</li>
+          <li>Танцевать</li>
+        </ol>
+      </div>
 
-    <h2>Мои социальные сети</h2>
-    <ul>
-      <li>
-        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-      </li>
-      <li><a href="https://telegram.org/" target="_blank">Telegram</a></li>
-      <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-      <li><a href="https://twitter.com/" target="_blank">X (Twitter)</a></li>
-    </ul>
+      <div class="card bg-green">
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <tr>
+            <td>Google</td>
+            <td>Fullstack</td>
+            <td>2012 - 2016</td>
+          </tr>
+          <tr>
+            <td>EPAM</td>
+            <td>Software Engineer</td>
+            <td>2016 - 2019</td>
+          </tr>
+          <tr>
+            <td>Software Outsorcing Services</td>
+            <td>Lead Frontend</td>
+            <td>2019 - 2021</td>
+          </tr>
+          <tr>
+            <td>LPTracker</td>
+            <td>Frontend</td>
+            <td>2021 - 2022</td>
+          </tr>
+        </table>
+      </div>
 
-    <hr />
+      <div class="card bg-red">
+        <h2>Website in English (Сайт на английском)</h2>
+        <a href="./index.html" target="_blank">Перейти</a>
+      </div>
 
-    <h2>Мои хобби</h2>
-    <ol>
-      <li>Чтение</li>
-      <li>Рыбалка</li>
-      <li>Кулинария</li>
-      <li>Танцевать</li>
-    </ol>
-
-    <hr />
-
-    <h2>Опыт работы</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Компания</th>
-          <th>Должность</th>
-          <th>Год</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>EPAM</td>
-          <td>Software Engineer</td>
-          <td>2016 - 2019</td>
-        </tr>
-        <tr>
-          <td>Software Outsorcing Services</td>
-          <td>Lead Frontend</td>
-          <td>2019 - 2021</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <hr />
-
-    <h2>Website in English (Сайт на английском)</h2>
-    <a href="./index.html" target="_blank">Перейти</a>
-
-    <hr />
-
-    <h2>Связаться со мной</h2>
-    <form action="#">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="Введите ваше имя" />
-      <br />
-      <br />
-      <label for="email">Ваш емайл:</label>
-      <input type="email" id="email" placeholder="Введите емайл" />
-      <br />
-      <br />
-      <label for="text">Ваше сообщение:</label>
-      <br />
-      <textarea
-        id="text"
-        cols="20"
-        rows="5"
-        placeholder="Введите ваше сообщение"
-      ></textarea>
-      <br />
-      <br />
-      <button type="submit">Связаться</button>
-    </form>
+      <div class="contact">
+        <h2>Связаться со мной</h2>
+        <form action="#">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите ваше имя" />
+            </div>
+            <div class="form-group">
+              <label for="email">Ваш емайл:</label>
+              <input type="email" id="email" placeholder="Введите емайл" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="text">Ваше сообщение:</label>
+            <textarea id="text" cols="20" rows="5"></textarea>
+          </div>
+          <button type="submit" class="button">Связаться</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

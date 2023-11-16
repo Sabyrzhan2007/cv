@@ -4,98 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sabyrzhan CV</title>
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td>
-          <img src="./avatar.jpg" alt="My Avatar" width="200" />
-        </td>
-        <td>
+    <div class="container">
+      <div class="info">
+        <img src="./avatar.jpg" alt="My Avatar" class="avatar" />
+
+        <div class="info-text">
           <h1>Zhaslanuly Sabyrzhan</h1>
-          <p>
-            <em>I am a student <strong>of EKITI</strong></em>
-          </p>
-          <p>I like to play chess, watch anime and program</p>
-        </td>
-      </tr>
-    </table>
+          <p>I am a student <strong>of EKITI</strong></p>
+          <p>I like to play chess and watch anime</p>
+  
+          <h4>My social networks</h4>
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+          |
+          <a href="https://telegram.org/" target="_blank">Telegram</a>
+          |
+          <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        </div>
+      </div>
 
-    <hr />
+      <div class="card bg-yellow">
+        <h2>My hobbies</h2>
+        <ol class="list">
+          <li>Reading</li>
+          <li>Fishing</li>
+          <li>Cooking</li>
+          <li>Dance</li>
+        </ol>
+      </div>
 
-    <h2>My social networks</h2>
-    <ul>
-      <li>
-        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-      </li>
-      <li><a href="https://telegram.org/" target="_blank">Telegram</a></li>
-      <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-      <li><a href="https://twitter.com/" target="_blank">X (Twitter)</a></li>
-    </ul>
+      <div class="card bg-green">
+        <h2>Experience</h2>
+        <table class="table">
+          <tr>
+            <td>Google</td>
+            <td>Fullstack</td>
+            <td>2012 - 2016</td>
+          </tr>
+          <tr>
+            <td>EPAM</td>
+            <td>Software Engineer</td>
+            <td>2016 - 2019</td>
+          </tr>
+          <tr>
+            <td>Software Outsorcing Services</td>
+            <td>Lead Frontend</td>
+            <td>2019 - 2021</td>
+          </tr>
+          <tr>
+            <td>LPTracker</td>
+            <td>Frontend</td>
+            <td>2021 - 2022</td>
+          </tr>
+        </table>
+      </div>
 
-    <hr />
+      <div class="card bg-red">
+        <h2>Website in Russian (Сайт на русском)</h2>
+        <a href="./indexru.html" target="_blank">Follow</a>
+      </div>
 
-    <h2>My hobbies</h2>
-    <ol>
-      <li>Reading</li>
-      <li>Fishing</li>
-      <li>Cooking</li>
-      <li>Dance</li>
-    </ol>
-
-    <hr />
-
-    <h2>Experience</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Company</th>
-          <th>Job title</th>
-          <th>Year</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>EPAM</td>
-          <td>Software Engineer</td>
-          <td>2016 - 2019</td>
-        </tr>
-        <tr>
-          <td>Software Outsorcing Services</td>
-          <td>Lead Frontend</td>
-          <td>2019 - 2021</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <hr />
-
-    <h2>Website in Russian (Сайт на русском)</h2>
-    <a href="./indexru.html" target="_blank">Follow</a>
-
-    <hr />
-
-    <h2>Contact with me</h2>
-    <form action="#">
-      <label for="name">Your name:</label>
-      <input type="text" id="name" placeholder="Enter your name" />
-      <br />
-      <br />
-      <label for="email">Your email:</label>
-      <input type="email" id="email" placeholder="Enter email" />
-      <br />
-      <br />
-      <label for="text">Your message:</label>
-      <br />
-      <textarea
-        id="text"
-        cols="20"
-        rows="5"
-        placeholder="Enter your message"
-      ></textarea>
-      <br />
-      <br />
-      <button type="submit">Contact</button>
-    </form>
+      <div class="contact">
+        <h2>Contact with me</h2>
+        <form action="#">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Your name:</label>
+              <input type="text" id="name" placeholder="Enter your name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Your email:</label>
+              <input type="email" id="email" placeholder="Enter email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="text">Your message:</label>
+            <textarea id="text" cols="25" rows="5"></textarea>
+          </div>
+          <button type="submit" class="button">Contact</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
